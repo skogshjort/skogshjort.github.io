@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+
+  <link rel="shortcut icon" href="images/favicon5.png">
+  <script>
+      let book_animation_index = -1;
+      const last_index = 5; 
+      document.querySelector("link").href = "images/favicon0.png";
+      var book_animation = window.setInterval(() => {
+          let url = "images/favicon" + Math.max(0, book_animation_index) + ".png";
+          console.log(url)
+          document.querySelector("link").href = url;
+          book_animation_index += 1;
+          if (book_animation_index > last_index) {
+              window.clearInterval(book_animation);
+          }
+      }, 75)
+      window.addEventListener("load", () => {
+        if (localStorage.backgroundcolor) {
+          document.getElementsByTagName("body")[0].style.background = localStorage.backgroundcolor;
+        }
+      })
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Does the body understand exceptions</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Does the body understand exceptions</h1>
+</header>
+<p><em>I have had a morning routine for a couple days. A part of that
+morning routine is a walk outside.</em></p>
+<h2 id="a-simple-walk">A simple walk</h2>
+<p>Outside. I love outside.</p>
+<p>But still.</p>
+<p>My body doesn’t understand “loving it later, probably”</p>
+<h2 id="why">Why</h2>
+<p>Why doesn’t my body understand that it will be so nice to get
+out.</p>
+<p>I really need the dopamine to motivate myself to get out.</p>
+<h2 id="outline">Outline</h2>
+<map name="image-map">
+<area target="" alt="träden och tiden" title="träden och tiden" href="the-tree-is-the-forest.html" coords="2169,441,2346,465,2333,649,2147,609" shape="poly">
+<area target="" alt="jaget är situationellt" title="jaget är situationellt" href="everything-changes.html" coords="2216,106,2368,113,2371,248,2475,290,2457,410,2158,290" shape="poly">
+<area target="" alt="oväntade lösningar" title="oväntade lösningar" href="suprising-solutions.html" coords="1788,188,2052,210,2096,363,1941,456,1708,405,1673,270,1708,206" shape="poly">
+<area target="" alt="adhd och att ha svårt att öva" title="adhd och att ha svårt att öva" href="adhd-and-practicing.html" coords="1230,1169,1577,1149,1560,1404,1214,1373" shape="poly">
+<area target="" alt="att få skapa sina egna processer" title="att få skapa sina egna processer" href="good-practice-is-neuronormative.html" coords="1196,1701,1551,1714,1651,2066,1203,2071" shape="poly">
+<area target="" alt="learngit och att börja bakifrån" title="learngit och att börja bakifrån" href="thinking-backwards.html" coords="1781,1169,2306,1149,2375,2288,1919,2268" shape="poly">
+<area target="" alt="practice makes permanent" title="practice makes permanent" href="practice-makes-permanent.html" coords="295,633,1340,675,1316,819,281,749" shape="poly">
+<area target="" alt="adam neely pratar om språk och hastighet och rytm" title="adam neely pratar om språk och hastighet och rytm" href="https://youtu.be/klZxfUWBBm8" coords="2,1402,228,1353,168,1789,4,1783" shape="poly">
+<!--<area target="" alt="att få misslyckas" title="att få misslyckas" href="success-is-a-spectrum" coords="" shape="poly">-->
+</map>
+<p><img src="images/tankekarta_20241012_1.gif" usemap="#image-map"></p>
+<p>Back to <a href="index.html">wikiblogarden</a>.</p>
+</body>
+</html>

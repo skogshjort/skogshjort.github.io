@@ -1,0 +1,304 @@
+@font-face {
+    font-family: "Header";
+    src: url("fonts/MonaspaceRadon-ExtraLight.woff2");
+    size-adjust: 90%;
+}
+
+h1, h2, h3, h4, h5, h6, hr, p, a, li, code, #titleimage {
+    mix-blend-mode: difference;
+}
+
+img {
+    max-width: 100%;
+    max-width: min(95vw, 150%);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    isolation: isolate;
+    mix-blend-mode: normal;
+    z-index: 1;
+}
+
+em {
+    font-family: serif;
+    font-size-adjust: 0.47;
+  }
+
+.title {
+    /*! font-size: -12rem; */
+    font-size: 1rem;
+    /*! font-family: 'Header'; */
+    font-family: serif;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: 'Header';
+  }
+  .title::before {
+    content: '🡢 ';
+  }
+
+not.title {
+    background: #d2c7a3;
+    display: inline-block;
+    color: var(--color-background);
+    /*! box-sizing: border-box; */
+    border: solid 12px #d2c7a3;
+    padding: .3em;
+    padding-top: .15em;
+    padding-bottom: 0;
+    transform: rotate(-2deg) translateX(-12px);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display:inline-block;
+    min-width: min-content;
+    text-align: center;
+
+    width: 44%;
+}
+
+not.title {
+    font-family: serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    letter-spacing: .4rem;
+    color: #c8bf8e;
+}
+
+not.title::before {
+    content: "";
+    background: var(--color-highlight);
+    --size: 0.3em;
+    position: absolute;
+    right: calc(-1 * var(--size));
+    bottom: calc(-1 * var(--size));
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    transform: rotate(0deg) scaleY(0.9) translateY(-0.2rem);
+    padding: var(--size);
+    z-index: -1;
+}
+not.title {
+    color: var(--color-background);
+    display: inline-block;
+    position: relative;
+    transform: rotate(-3deg);
+}
+
+not.h1.title {
+    background: var(--color-highlight);
+    padding: 1rem;
+    display: inline-block;
+    border: dotted 0.5rem var(--color-background);
+    border-top: none;
+    border-bottom: none;
+    outline: solid .25rem var(--color-highlight);
+    color: var(--color-background);
+    transform: rotate(-4deg);
+    width: min-content;
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    position: relative;
+    float: left;
+    margin: 3rem;
+      margin-right: 3rem;
+    right: 50%;
+    position: relative;
+    left: -10rem;
+    margin-right: -7rem;
+  }
+
+not.h1.title {
+  background: var(--color-highlight);
+  padding: 1rem;
+  display: inline-block;
+  border: dotted 0.5rem var(--color-background);
+  border-top: none;
+  border-bottom: none;
+  outline: solid .25rem var(--color-highlight);
+  color: var(--color-background);
+  transform: rotate(-4deg);
+}
+
+not.h1.title {
+    color: var(--color-background);
+    border-left: dotted 12px;
+    border-right: dotted 12px;
+    padding: 1.1rem;
+    display: inline-block;
+    width: min-content;
+    left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    right: 0;
+    margin: auto;
+    transform: rotate(-4deg);
+    margin: 2rem;
+    background: var(--color-highlight);
+  }
+
+figure#titleimage {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    z-index: -1;
+
+    image-rendering: crisp-edges;
+}
+
+figure#titleimage > img {
+  max-width: 100%;
+}
+
+figure > img {
+    border-radius: 1em 5em 1em 5em;
+    overflow: clip;
+}
+
+@media (orientation: portrait) {
+figure#titleimage {
+    width: inherit;
+    position: inherit;
+    left: 0;
+    right: 0;
+    top: inherit;
+    z-index: inherit;
+    margin: inherit;
+}
+figure#titleimage > img {
+    max-height: 30vh;
+}
+}
+
+figure > figcaption {
+    text-align: center;
+    font-size: 80%;
+    font-style: italic;
+}
+
+body {
+    /*light*/
+    --color-background: #fffecc;
+    --color-foreground: #323d12;
+    --color-highlight: #d900ad;
+    /*dark
+    --color-background: rgb(31, 39, 54);
+    --color-foreground: white;
+    --color-highlight: #ff44b6;
+    */
+    
+    --color-background: #9261b3;
+    --color-foreground: #fffecc;
+    --color-highlight: #00ffcf;
+    
+    
+
+    --color-background: #e8e9c9;
+    --color-foreground: #51677c;
+    --color-highlight: #f94603;
+    
+    
+    --margin-big: 3rem;
+
+    background: var(--color-background);
+    color: var(--color-foreground);
+
+    font-family: sans-serif, "Body", Comic Sans, Courier, serif;
+    font-size: 1.1em;
+
+    position: relative;
+    margin: 2em;
+    padding: 2em;
+    padding: min(2em, 5vw);
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    --color-background: #cedbda;
+    --color-foreground: #748b9f;
+    --color-highlight: #f94603;
+    width: fit-content;
+    --color-background: #ddff39;
+    --color-foreground: #e0fff8;
+    --color-highlight: #f94603;
+    transition: background-color 4s cubic-bezier(0,.27,.01,.99);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Header", Comic Sans, Courier, serif;
+    text-wrap: balance;
+    margin-top: var(--margin-big);
+    /*! --color-foreground: #b7b3b5; */
+    color: var(--color-foreground);
+    font-family: initial;
+    font-size-adjust: .7;
+    font-family: 'Header';
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+h2 {
+    border-bottom: solid 2px var(--color-foreground);
+}
+a {
+    color: var(--color-highlight);
+    position: relative;
+}
+a:hover {
+    background: var(--color-highlight);
+    color: black;
+}
+a:hover::before {
+    content: "";
+    background: var(--color-highlight);
+    --size: 0.3em;
+    position: absolute;
+    right: calc(-1 * var(--size));
+    bottom: calc(-1 * var(--size));
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    transform: rotate(2deg);
+    padding: var(--size);
+    z-index: -1;
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--color-foreground);
+    margin: var(--margin-block);
+}
+ul > li {
+    list-style: " — ";
+}
+
+code {
+    background: white;
+    padding: 0.2rem;
+    color: black;
+}
+
+pre {
+    text-align: center;
+}
+pre > code {
+    font-family: 'Header';
+    background: #ffea98;
+    display: inline-block;
+    text-align: initial;
+    padding: 2ch;
+    border-radius: 3ch .3ch 3ch .3ch;
+    color: black;
+}
+
+div.sourceCode {
+    background: initial;
+}
+
+.fullwidth {
+    width: 100%;
+}
