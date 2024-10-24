@@ -17,11 +17,6 @@
               window.clearInterval(book_animation);
           }
       }, 75)
-      window.addEventListener("load", () => {
-        if (localStorage.backgroundcolor) {
-          document.getElementsByTagName("body")[0].style.background = localStorage.backgroundcolor;
-        }
-      })
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Does the body understand exceptions</title>
@@ -73,4 +68,9 @@ out.</p>
 <p><img src="images/tankekarta_20241012_1.gif" usemap="#image-map"></p>
 <p>Back to <a href="index.html">wikiblogarden</a>.</p>
 </body>
+<script>
+    if (localStorage.backgroundcolor) {
+      document.getElementsByTagName("body")[0].style.background = localStorage.backgroundcolor;
+    }
+</script>
 </html>

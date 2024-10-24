@@ -17,14 +17,9 @@
               window.clearInterval(book_animation);
           }
       }, 75)
-      window.addEventListener("load", () => {
-        if (localStorage.backgroundcolor) {
-          document.getElementsByTagName("body")[0].style.background = localStorage.backgroundcolor;
-        }
-      })
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>hej hej</title>
+  <title>Color</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -46,12 +41,16 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">hej hej</h1>
+<h1 class="title">Color</h1>
 </header>
-<p>hej hej</p>
 <p><a href="#"
 onclick="let c = &quot;hsl(&quot; + Math.random() * 255 + &quot;deg, 100%, &quot; + (50+(Math.floor(Math.random()*4)-1)*40) + &quot;%)&quot;; document.getElementsByTagName(&quot;body&quot;)[0].style.background = c; localStorage.setItem(&quot;backgroundcolor&quot;, c);">byta
 bakgrund?</a></p>
 <p>Back to <a href="index.html">wikiblogarden</a>.</p>
 </body>
+<script>
+    if (localStorage.backgroundcolor) {
+      document.getElementsByTagName("body")[0].style.background = localStorage.backgroundcolor;
+    }
+</script>
 </html>

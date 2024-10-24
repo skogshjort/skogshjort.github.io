@@ -17,11 +17,6 @@
               window.clearInterval(book_animation);
           }
       }, 75)
-      window.addEventListener("load", () => {
-        if (localStorage.backgroundcolor) {
-          document.getElementsByTagName("body")[0].style.background = localStorage.backgroundcolor;
-        }
-      })
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Hej Billy</title>
@@ -59,4 +54,9 @@
 <pre><code>markdown 🡢 pandoc 🡢 html</code></pre>
 <p>Back to <a href="index.html">wikiblogarden</a>.</p>
 </body>
+<script>
+    if (localStorage.backgroundcolor) {
+      document.getElementsByTagName("body")[0].style.background = localStorage.backgroundcolor;
+    }
+</script>
 </html>

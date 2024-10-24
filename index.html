@@ -17,11 +17,6 @@
               window.clearInterval(book_animation);
           }
       }, 75)
-      window.addEventListener("load", () => {
-        if (localStorage.backgroundcolor) {
-          document.getElementsByTagName("body")[0].style.background = localStorage.backgroundcolor;
-        }
-      })
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>wiki­blo­garden</title>
@@ -57,9 +52,7 @@ garden.</p>
 </header>
 <h2 id="new-things">New things</h2>
 <ul>
-<li><a href="hej.html">hej</a> </li>
-<li><a href="hej-hej.html">hej hej</a> </li>
-<li><a href="hej-noel.html">Hej Noel</a> </li>
+<li><a href="color.html">Color</a> </li>
 <li><a href="readme.html">readme</a> </li>
 <li><a href="does-the-body-understand-exceptions.html">Does the body
 understand exceptions</a> </li>
@@ -67,4 +60,9 @@ understand exceptions</a> </li>
 <li><a href="stay-slippy.html">Stay slippy</a> </li>
 </ul>
 </body>
+<script>
+    if (localStorage.backgroundcolor) {
+      document.getElementsByTagName("body")[0].style.background = localStorage.backgroundcolor;
+    }
+</script>
 </html>

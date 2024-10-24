@@ -35,6 +35,7 @@ em {
   }
   .title::before {
     content: '🡢 ';
+    content: '▶ ';
   }
 
 not.title {
