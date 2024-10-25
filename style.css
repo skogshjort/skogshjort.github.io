@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Header";
     src: url("fonts/MonaspaceRadon-ExtraLight.woff2");
-    size-adjust: 90%;
+    /*size-adjust: 90%;*/
 }
 
 h1, h2, h3, h4, h5, h6, hr, p, a, li, code, #titleimage {
@@ -216,7 +216,6 @@ body {
     margin: 2em;
     padding: 2em;
     padding: min(2em, 5vw);
-    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
     
@@ -228,6 +227,9 @@ body {
     --color-foreground: #e0fff8;
     --color-highlight: #f94603;
     /* transition: background-color 4s cubic-bezier(0,.27,.01,.99); */
+    max-width: 750px;
+    max-width: min(750px, 100vw);
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -282,6 +284,7 @@ code {
     background: white;
     padding: 0.2rem;
     color: black;
+    font-size: 0.9em;
 }
 
 pre {
@@ -295,6 +298,7 @@ pre > code {
     padding: 2ch;
     border-radius: 3ch .3ch 3ch .3ch;
     color: black;
+    font-size: 0.9em;
 }
 
 div.sourceCode {
