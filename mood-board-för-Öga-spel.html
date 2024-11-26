@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+
+  <link rel="shortcut icon" href="images/favicon5.png">
+  <script>
+      let book_animation_index = -1;
+      const last_index = 5; 
+      document.querySelector("link").href = "images/favicon0.png";
+      var book_animation = window.setInterval(() => {
+          let url = "images/favicon" + Math.max(0, book_animation_index) + ".png";
+          console.log(url)
+          document.querySelector("link").href = url;
+          book_animation_index += 1;
+          if (book_animation_index > last_index) {
+              window.clearInterval(book_animation);
+          }
+      }, 75)
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Mood Board för Öga-Spel</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Mood Board för Öga-Spel</h1>
+</header>
+<p><img src="images/moodboard/flaklypa1.gif" /></p>
+<p>I <a href="sv.wikipedia.org/wiki/Flåklypa_Grand_Prix">Flåklypa Grand
+Prix</a> finns flera väldigt fina parallax-vyer. Jag vill växla mellan
+stora och små perspektiv, kunna röra mig flera mil och några
+decimeter.</p>
+<hr />
+<p><img src="images/moodboard/felvidek1.gif" /></p>
+<p>Genom att låta ögats position vara på något rörligt kan vi följa med.
+Barnvagn. Rida på en varg. Titta på utsikten. Vara beredd på när något
+dyker upp.</p>
+<p>Det kan vara frustrerande att vänta, så håll det till korta loopar om
+vi ska röra oss. Tänk musikaliskt. Gunga. Stanna till vid nyckel-scener.
+Rotera som tunnorna i Donkey Kong.</p>
+<p><img src="images/moodboard/flaklypa2.gif" /></p>
+<p>Att få vara nära. Att inspektera. Titta på en varelse, den rör sig
+“oj! Jag?? Okej..!” för att få den att påbörja eller avbryta en
+rörelse.</p>
+<p>Back to <a href="index.html">wikiblogarden</a>.</p>
+</body>
+<script>
+    if (localStorage.backgroundcolor) {
+      document.getElementsByTagName("body")[0].style.background = localStorage.backgroundcolor;
+    }
+</script>
+</html>

@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6, hr, p, a, li, code, #titleimage {
     mix-blend-mode: difference;
 }
 
+p:has(> img) {
+    mix-blend-mode: normal;
+}
+
 img {
     max-width: 100%;
     max-width: min(95vw, 150%);
@@ -17,6 +21,11 @@ img {
     isolation: isolate;
     mix-blend-mode: normal;
     z-index: 1;
+    border: #fffbdf solid 1em;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: black .3em .3em 2em -1em;
+    background: #fffbdf;
 }
 
 em {
